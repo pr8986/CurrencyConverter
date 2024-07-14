@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrencyConverter</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-yellow-100 flex  items-center justify-center h-screen ">
+    <div class="bg-white border border-hidden flex flex-col items-center justify-center rounded-lg inline-block w-40vh min-h-45vh p-[2rem]">
+        
+        <form class="  mr-0 mb-[1rem] ml-0">
+            <h2 class="font-bold text-lg italic">Currency Converter</h2>
+            <div class="mt-4 amount">
+                <p>Enter Amount</p>
+                <input value=1 type="text" class="border rounded-lg w-full p-1" />
+            </div>
+            <div class="dropdown flex justify-between mt-5">
+                <div class="from">
+                    <p>from </p>
+                    <div class="flex border border-gray-200 rounded-lg items-center justify-center">
+                        <img src="https://flagsapi.com/US/flat/64.png" class="max-w-8 p-0.5">
+                        <select name="from" class="border-none focus:outline-none">
+                            <option value="INR">INR</option>
+                            <option value="USD" selected>USD</option>
+                            <option value="AUD">AUD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                </div>
+                
+
+                <i class="fa-solid fa-arrow-right-arrow-left mt-8"></i>
+                <div class="to">
+                    <P>To</P>
+                    <div class="flex border border-gray-200 rounded-lg items-center justify-center">
+                        <img src="https://flagsapi.com/IN/flat/64.png" class="max-w-8 p-0.5">
+                        <select name="to"  class="border-none focus:outline-none">
+                            <option value="INR">INR</option>
+                            <option value="USD">USD</option>
+                            <option value="AUD">AUD</option>
+                            <option value="EUR">EUR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            
+                <div class="flex mt-5 msg">1USD=80INR</div>
+            
+            <button class="bg-pink-500 rounded-md py-2  px-[45px] mt-5 text-white">Get Exchange Rate</button>
+           
+        </form>
+    </div>
+    <script src="js/code.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
